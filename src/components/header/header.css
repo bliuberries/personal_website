@@ -1,0 +1,19 @@
+.navigation-title {
+  font-size: 15px;
+  margin: 15px;
+  padding: 2px;
+  float: right;
+}
+
+.navigation-title::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #000;
+  transition: width .3s;
+}
+
+.navigation-title:hover::after {
+  width: 100%;
+}
