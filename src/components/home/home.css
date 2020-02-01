@@ -8,5 +8,7 @@
 
 .full-name {
   display: block;
-  transform: translate(-50%, -50%);
+  font-size: 44px;
+  font-weight: 700;
+  /* transform: translate(-50%, -50%); */
 }
