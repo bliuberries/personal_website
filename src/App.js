@@ -1,55 +1,28 @@
-import React, { Component } from 'react';
-import Icon from './icon/icon.jsx';
+import React from 'react';
+import { Switch, Route } from "react-router-dom";
+
+import Home from './components/home/home.jsx';
+import About from './components/about/about.jsx';
+import Header from './components/header/header.jsx';
+import Resume from './components/resume/resume.jsx';
+import Contact from './components/contact/contact.jsx';
+// import Portfolio from './components/portfolio/portfolio.jsx';
+
 import './App.css';
 
-export default class App extends Component {
+const App = () => {
 
+  return (
+    <div className="App">
+      <Switch>
+        <Route exact path='/' render={() => <Home />} />
+        <Route exact path='/about' component={About} />
+        {/* <Route exact path='/portfolio' component={Portfolio} /> */}
+        {/* <Route exact path='/resume' component={Resume} /> */}
+        {/* <Route exact path='/contact' component={Contact} /> */}
+      </Switch>
+    </div>
+  )
+}
 
-  render() {
-    const navStyle = {
-      textDecoration: "none",
-      color: "#fff",
-      cursor: "pointer",
-    }
-    return (
-      <div className="App">
-        <div className="Home-page">
-          <div className="logo">
-            <div></div>
-          </div>
-          <div>
-            <Icon />
-            <div>
-              <a className="navigation-title" href="/contact" style={navStyle} >
-                Contact
-              </a>
-            </div>
-            <div>
-              <a className="navigation-title" href="/about" style={navStyle} >
-                About
-              </a>
-            </div>
-            <div>
-              <a className="navigation-title" href="/resume" style={navStyle} >
-                Resume
-              </a>
-            </div>
-            <div>
-              <a className="navigation-title" href="/portfolio" style={navStyle} >
-                Portfolio
-              </a>
-            </div>
-            <div>
-              <a className="navigation-title" href="/" style={navStyle} >
-                Home
-              </a>
-            </div>
-          </div>
-          <header className="App-header">
-            <span className="full-name">DEVELOPER.</span>
-          </header>
-        </div>
-      </div>
-    )
-  }
-} 
+export default App;
