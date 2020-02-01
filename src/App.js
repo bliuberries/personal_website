@@ -3,9 +3,8 @@ import { Switch, Route } from "react-router-dom";
 
 import Home from './components/home/home.jsx';
 import About from './components/about/about.jsx';
-import Header from './components/header/header.jsx';
-import Resume from './components/resume/resume.jsx';
-import Contact from './components/contact/contact.jsx';
+// import Resume from './components/resume/resume.jsx';
+// import Contact from './components/contact/contact.jsx';
 // import Portfolio from './components/portfolio/portfolio.jsx';
 
 import './App.css';
