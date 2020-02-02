@@ -1,5 +1,8 @@
-.App {
-  display:block;
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .background {
@@ -8,6 +11,19 @@
   background-attachment: fixed;
   width: 100%;
   height: 100vh;
+  
 }
 
+.center-text {
+  display: block;
+  font-size: 44px;
+  font-weight: 700;
+}
 
+.center-text-container {
+  top: 50%;
+  left: 50%;
+  position: fixed;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
