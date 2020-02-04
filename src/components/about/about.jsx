@@ -10,9 +10,9 @@ const About = () => {
       <Header props='About Me'/>
       <div className="background" >
         <div className="center-text-container">
-          <span className="center-text">My Passions & </span>
+          <strong className="center-text">My Passions & </strong>
           <br/>
-          <span className="center-text">Personality</span>
+          <strong className="center-text">Personality</strong>
         </div>
       </div>
       <div className="about-me-grid-container">
