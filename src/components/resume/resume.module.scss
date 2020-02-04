@@ -1,0 +1,16 @@
+.downloadButton {
+  top:65%;
+  left: 28%;
+  position: relative;
+  padding: 21px 34px;
+  font-size: 11px;
+  background-color: transparent;
+  border: 1px solid #e1a87a;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+   &:hover {
+    background-color: #e1a87a;
+    color: white;
+   }
+}
