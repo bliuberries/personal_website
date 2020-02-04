@@ -26,19 +26,21 @@ const pages = [
   },
 ];
 
-const Header = () => {
+const Header = (title) => {
   return (
     <div>
       <Icon />
       {pages.map((header, index) => {
         return (
           <SingleHeader
+            title={title.props}
             key={index}
             headerTitle={header.title}
             alias={header.alias}
           />
         );
       })}
+      
     </div>
   );
 };
@@ -48,6 +50,7 @@ class SingleHeader extends React.Component {
     super(props);
     this.state = {
       isHoverOver: false,
+      currentPage: props.title
     };
     this.onUserHover = this.onUserHover.bind(this);
   }
@@ -62,12 +65,10 @@ class SingleHeader extends React.Component {
     const style = {
       cursor: this.state.isHoverOver ? 'pointer' : 'default',
     };
-
     const linkStyle = {
       textDecoration: 'none',
-      color: '#000'
+      color: this.state.currentPage === this.props.headerTitle ? '#fff': '#000'
     };
-
     return (
       <div>
         
