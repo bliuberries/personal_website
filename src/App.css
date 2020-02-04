@@ -17,9 +17,11 @@ body {
 
 .center-text {
   display: block;
-  font-size: 44px;
-  font-weight: 700;
-  color: white;
+  font-size: 74px;
+  font-weight: 600;
+  letter-spacing: .015em;
+  line-height: 1em;
+  color: #000;
 }
 
 .center-text-container {
