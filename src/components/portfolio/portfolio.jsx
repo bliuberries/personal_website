@@ -34,7 +34,7 @@ class Portfolio extends React.Component {
             <span className="center-text">My Projects</span>
           </div>
         </div>
-        <Dropdown props={this.getCurrentValue.bind(this)} />
+        <Dropdown fn={this.getCurrentValue.bind(this)} />
         <Project name={project} />
       </div>
     );

@@ -11,7 +11,7 @@ class Home extends React.Component {
         <Header props='Home'/>
           <div className="background">
             <div className="center-text-container">
-              <span className="center-text">DEVELOPER</span>
+              <strong className="center-text">DEVELOPER</strong>
 
           </div>
         </div>
