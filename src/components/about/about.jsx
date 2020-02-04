@@ -1,5 +1,4 @@
 import React from 'react';
-import Header from './../header/header.jsx';
 // import Contact from './contact.jsx';
 // import SocialMedia from './socialMedia.jsx';
 import './about.css';
@@ -7,7 +6,6 @@ import './about.css';
 const About = () => {
   return (
     <div>
-      <Header props='About Me'/>
       <div className="background" >
         <div className="center-text-container">
           <strong className="center-text">My Passions & </strong>

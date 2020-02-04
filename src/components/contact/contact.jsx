@@ -1,11 +1,9 @@
 import React from 'react';
-import Header from './../header/header.jsx';
 
 const Contact = () => {
 
   return (
     <div className='contact'>
-      <Header props='Contact'/>
       <div className="background" >
         <div className="center-text-container">
           <strong className="center-text">Connect with</strong>

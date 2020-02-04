@@ -1,18 +1,17 @@
 import React from 'react';
-import Header from './../header/header.jsx';
 import Download from './download.jsx';
+// import resumeStyles from './resume.scss';
 
 const Resume = () => {
   return (
     <div className='resume'>
-      <Header props='Resume'/>
       <div className="background" >
         <div className="center-text-container">
           <strong className="center-text">Dig a little</strong>
-          <br/>
+          <br />
           <strong className="center-text">deeper.</strong>
-          <Download />
         </div>
+        <Download />
       </div>
       <div className='resume-container'>
       </div>

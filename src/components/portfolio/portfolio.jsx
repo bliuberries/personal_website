@@ -1,5 +1,4 @@
 import React from 'react';
-import Header from './../header/header.jsx';
 import Dropdown from './dropDown.jsx';
 import Project from './singleProject';
 import './portfolio.css';
@@ -28,7 +27,7 @@ class Portfolio extends React.Component {
     this.state.projectName === 'Tetris' ? Tetris : superMario;
     return (
       <div>
-        <Header props='Portfolio'/>
+        {/* <Header props='Portfolio'/> */}
         <div className="background" >
           <div className="center-text-container">
             <span className="center-text">My Projects</span>
