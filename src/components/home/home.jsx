@@ -8,13 +8,11 @@ class Home extends React.Component {
   render() {
     return (
       <div>
-        <Header />
-        <div className="home-page-container">
+        <Header props='Home'/>
           <div className="background">
-            <div className="home-page">
-              <span className="full-name">DEVELOPER.</span>
+            <div className="center-text-container">
+              <span className="center-text">DEVELOPER</span>
 
-            </div>
           </div>
         </div>
       </div>
