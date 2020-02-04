@@ -6,7 +6,7 @@ const Resume = () => {
     <div className='resume'>
       <Header />
       <div className='resume-container'>
-      <a href="" target="blank"></a>
+      {/* <a href="" target="blank"></a> */}
       </div>
     </div>
   )
