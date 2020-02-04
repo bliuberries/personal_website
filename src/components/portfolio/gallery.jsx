@@ -2,11 +2,6 @@ import React from 'react';
 import Carousel from 'react-images';
 
 const customStyles = {
-  header: (base, state) => ({
-    ...base,
-    borderBottom: '1px dotted pink',
-    padding: 20,
-  }),
   container: (base) => ({
     ...base,
     backgroundColor: '#fafafa',
@@ -17,8 +12,9 @@ const customStyles = {
   footer: (base, state) => ({
     ...base,
     color: 'black',
-    minHeight: 42,
+    minHeight: 4,
     paddingBottom: 0,
+
   }),
   footerCount: (base) => ({
     ...base,
@@ -29,12 +25,24 @@ const customStyles = {
   }),
   navigationPrev: (base) => ({
     ...base,
+    backgroundColor: 'transparent',
     color: 'black',
   }),
   navigationNext: (base) => ({
     ...base,
+    backgroundColor: 'transparent',
     color: 'black',
   }),
+  view: (base, state) => ({
+    ...base,
+    filter: state.interactionIsIdle ? 'grayscale(100%)' : null,
+    paddingBottom: `${10 / 16 * 100}%`,
+    overflow: 'hidden',
+    position: 'relative',
+    transition: 'filter 300ms',
+    maxHeight: '60vh',
+  }),
+
 };
 
 const Gallery = (props) => {
