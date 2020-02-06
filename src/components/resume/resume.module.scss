@@ -1,6 +1,6 @@
-.downloadButton {
+.button {
   top:65%;
-  left: 28%;
+  left: 33%;
   position: relative;
   padding: 21px 34px;
   font-size: 11px;
@@ -13,4 +13,8 @@
     background-color: #e1a87a;
     color: white;
    }
+}
+
+.left-side {
+  float: left
 }
