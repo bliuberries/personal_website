@@ -8,7 +8,7 @@ import Resume from './components/resume/resume.jsx';
 import Contact from './components/contact/contact.jsx';
 import Portfolio from './components/portfolio/portfolio.jsx';
 
-import './App.css';
+import './App.scss';
 
 const App = () => {
 
