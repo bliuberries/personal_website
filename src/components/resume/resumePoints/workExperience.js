@@ -1,6 +1,6 @@
 const workExperience = [
   {
-    role: 'Systems Administrator',
+    role: 'SYSTEMS ADMINISTRATOR',
     companies: [
       {
         name: 'Craig Technologies',
@@ -25,7 +25,7 @@ const workExperience = [
     ]
   },
   {
-    role: 'Base Equipment Custodian Officer',
+    role: 'BASE EQUIPMENT CUSTODIAN OFFICER',
     companies: [
       {
         name: 'U.S. Air Force',
