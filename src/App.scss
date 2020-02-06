@@ -20,11 +20,12 @@ body {
   top: 50%;
   left: 50%;
   position: absolute;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-100%, -50%);
+  transform: translate(-100%, -50%);
 }
 
 .center-text {
+  font-family: 'Raleway', sans-serif;
   display: block;
   font-size: 74px;
   font-weight: 600;
