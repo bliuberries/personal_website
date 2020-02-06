@@ -1,6 +1,7 @@
 import React from 'react';
 // import Contact from './contact.jsx';
 // import SocialMedia from './socialMedia.jsx';
+import ContactSnippet from '../contact/contactSnippet.jsx';
 import './about.css';
 
 const About = () => {
@@ -9,7 +10,7 @@ const About = () => {
       <div className="background" >
         <div className="center-text-container">
           <strong className="center-text">My Passions & </strong>
-          <br/>
+          <br />
           <strong className="center-text">Personality</strong>
         </div>
       </div>
@@ -35,13 +36,9 @@ const About = () => {
             <br />
           </div>
           <br />
-          {/* <div className="contact-box">
-              <Contact />
-            <SocialMedia />
-            </div> */}
-
         </div>
       </div>
+      <ContactSnippet />
     </div>
   );
 };
