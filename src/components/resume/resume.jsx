@@ -11,7 +11,7 @@ import skills from './resumePoints/skills.js'
 import education from './resumePoints/education.js'
 import workExperience from './resumePoints/workExperience.js'
 
-
+import ContactSnippet from '../contact/contactSnippet.jsx';
 // import resumeStyles from './resume.scss';
 
 const Resume = () => {
@@ -28,6 +28,7 @@ const Resume = () => {
       <div className='resume-container'>
         <Formatter skills={skills} education={education} work={workExperience}/>
       </div>
+      <ContactSnippet />
     </div>
   )
 }
