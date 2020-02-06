@@ -1,0 +1,62 @@
+.modal {
+  position: absolute;
+  border: 1px solid black;
+  height: 30em;
+  width: 25em;
+  top: 30%;
+  left: 35%;
+  padding: 20px;
+  right: auto;
+  bottom: auto;
+  background-color: white;
+  overflow: auto;
+}
+
+.modalHeader {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2em;
+  letter-spacing: 0.1em;
+}
+
+.modalTitle {
+  display: grid;
+  justify-content: center;
+  margin: 1em;
+}
+
+.contactForm {
+  font-size: 0.5em;
+}
+
+.formName {
+  width: 100%;
+  margin: 1em 0em;
+}
+
+.formEmail {
+  margin: 1em 0em;
+  width: 100%;
+}
+
+
+.formText {
+  margin: 1em 0em;
+  width: 100%;
+  height: 150px;
+}
+
+.formSubmit {
+  color: #fff;
+  width: 100%;
+  height: 30px;
+  background-color: #000;
+  cursor: pointer;
+  &:hover {
+    background-color: #e1a87a;
+    color: black;
+   }
+}
+
+button:focus {
+  outline: 0;
+}
