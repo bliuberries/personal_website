@@ -22,8 +22,10 @@ const Resume = () => {
           <strong className="center-text">Dig a little</strong>
           <br />
           <strong className="center-text">deeper.</strong>
+          <br/>
+          <br/>
+          <Download />
         </div>
-        <Download />
       </div>
       <div className='resume-container'>
         <Formatter skills={skills} education={education} work={workExperience}/>
