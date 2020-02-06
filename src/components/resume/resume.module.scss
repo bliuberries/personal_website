@@ -1,8 +1,6 @@
 .button {
-  top:65%;
-  left: 33%;
-  position: relative;
   padding: 21px 34px;
+  margin-top: 20px;
   font-size: 11px;
   background-color: transparent;
   border: 1px solid #e1a87a;
@@ -15,6 +13,20 @@
    }
 }
 
-.left-side {
-  float: left
+.gridA {
+  grid-template-columns: 30% 70%;
+  font-family: 'Raleway', sans-serif;
+  display: grid;
+  align-content: center;
+  padding-right: 5%;
+}
+
+.item1 {
+  grid-column: 1 / 2;
+  font-size: 26px;
+}
+.item2 {
+  grid-column: 2 / 2;
+  padding-top: 10px;
+  font-size: 16px;
 }
