@@ -1,90 +1,44 @@
 import React from 'react';
 import Icon from './icon/icon.jsx';
-import { Link } from 'react-router-dom';
-import './header.css';
+import pages from './pages.js';
+import SingleHeader from './singleHeader.jsx';
 
-const pages = [
-  {
-    title: 'Contact',
-    alias: '/contact',
-  },
-  {
-    title: 'Resume',
-    alias: '/resume',
-  },
-  {
-    title: 'Portfolio',
-    alias: '/portfolio',
-  },
-  {
-    title: 'About Me',
-    alias: '/about',
-  },
-  {
-    title: 'Home',
-    alias: '/',
-  },
-];
-
-const Header = (title) => {
-  return (
-    <div>
-      <Icon />
-      {pages.map((header, index) => {
-        return (
-          <SingleHeader
-            title={title.props}
-            key={index}
-            headerTitle={header.title}
-            alias={header.alias}
-          />
-        );
-      })}
-      
-    </div>
-  );
-};
-
-class SingleHeader extends React.Component {
-  constructor(props) {
-    super(props);
+class Header extends React.Component {
+  constructor() {
+    super()
     this.state = {
-      isHoverOver: false,
-      currentPage: props.title
+      currentPage: 'Home'
     };
-    this.onUserHover = this.onUserHover.bind(this);
+
+    this.clicked = this.clicked.bind(this);
   }
 
-  onUserHover() {
-    this.setState({
-      isHoverOver: !this.state.isHoverOver,
-    });
+  clicked(page) {
+    this.setState({currentPage: page})
   }
 
   render() {
-    const style = {
-      cursor: this.state.isHoverOver ? 'pointer' : 'default',
-    };
-    const linkStyle = {
-      textDecoration: 'none',
-      color: this.state.currentPage === this.props.headerTitle ? '#fff': '#000'
-    };
     return (
       <div>
-        
-        <Link to={this.props.alias} style={linkStyle}>
-          <div
-            className='navigation-title'
-            style={style}
-            onMouseOver={this.onUserHover}
-            onMouseOut={this.onUserHover}
-          >
-            {this.props.headerTitle}
-          </div>
-        </Link>
+        <Icon />
+        {pages.map((header, index) => {
+          return (
+            <SingleHeader
+              onClick={this.clicked}
+              key={index}
+              headerTitle={header.title}
+              alias={header.alias}
+              aStyle={
+                {color: 
+                  this.state.currentPage === header.title 
+                  ? '#fff' : '#000'}
+                }
+            />
+          );
+        })}
       </div>
     );
   }
-}
+};
 
 export default Header;
