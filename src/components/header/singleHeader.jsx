@@ -13,10 +13,10 @@ const SingleHeader = props => {
   return (
     <div onClick={onClick} >
       <Link to={props.alias}>
-        <div className={headerStyles.navigationTitle}
+        <strong className={headerStyles.navigationTitle}
           style={props.aStyle}>
           {props.headerTitle}
-        </div>
+        </strong>
       </Link>
     </div>
   );
