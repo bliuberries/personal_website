@@ -1,9 +1,58 @@
+.contactContainer {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  justify-content: space-evenly;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+}
+
+
+.contactModal {
+  margin: auto;
+  padding: 5%;
+}
+
+
+//modal text component
+.cTBox {
+  
+  border: 1px solid #e1a87a;
+  // width: 60%;
+  &:hover {
+    background-color: #1a1a1a;
+    color: white;
+    cursor: pointer;
+   }
+}
+
+.cTBoxTitle {
+  padding-top: 4%;
+  font-weight: bold;
+}
+
+.cTBoxText {
+  padding: 4% 7%;
+}
+
+.cTBoxBottomText {
+  font-size: medium;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #e1a87a;
+  padding-bottom: 5%
+}
+
+
+//Modal component
 .modal {
   position: absolute;
   border: 1px solid black;
   height: 30em;
   width: 25em;
-  top: 30%;
+  top: 10%;
   left: 35%;
   padding: 20px;
   right: auto;
@@ -28,16 +77,10 @@
   font-size: 0.5em;
 }
 
-.formName {
+.formInput {
   width: 100%;
   margin: 1em 0em;
 }
-
-.formEmail {
-  margin: 1em 0em;
-  width: 100%;
-}
-
 
 .formText {
   margin: 1em 0em;
@@ -57,6 +100,10 @@
    }
 }
 
+.smallText {
+  font-size: xx-small;
+}
+
 button:focus {
   outline: 0;
 }
@@ -74,6 +121,7 @@ button:focus {
   margin-left: 30%;
   margin-right: 30%;
 }
+
 .button {
   display: inline-block;
   text-decoration: none;
