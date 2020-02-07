@@ -44,10 +44,17 @@ export default class ContactModal extends React.Component {
   render() {
 
     return (
-      <div className='contact-button'>
-        <button className='contact-text' onClick={this.openModal}>
-          CONTACT
-        </button>
+      <div className={contactStyles.contactModal}>
+        <div className={contactStyles.cTBox} onClick={this.openModal}>
+          <div className={contactStyles.cTBoxTitle}>Got questions?</div>
+          <div className={contactStyles.cTBoxText}>
+            Feel free to contact me about any inquiry you might have. Also, you could always just send me a friendly hello.
+          </div>
+          <div className={contactStyles.cTBoxBottomText}>
+            Say Hello
+          </div>
+        </div>
+
         <Modal
           className={contactStyles.modal}
           isOpen={this.state.isModalOpen}
@@ -62,16 +69,17 @@ export default class ContactModal extends React.Component {
             >
               <input type='hidden' name='contact_number' />
               <label>
-                Name
-                <input type='text' name='user_name' className={contactStyles.formName} required/>
+                Name*
+                <div className={contactStyles.smallText}>I'd like to know who I'm talking to.</div>
+                <input type='text' name='user_name' className={contactStyles.formInput} required />
               </label>
               <label>
-                Email
-                <input type='email' name='user_email' className={contactStyles.formEmail} required/>
+                Email*
+                <input type='email' name='user_email' className={contactStyles.formInput} required />
               </label>
               <label>
-                Message
-                <textarea name='message' className={contactStyles.formText} required/>
+                Message*
+                <textarea name='message' className={contactStyles.formText} required />
               </label>
               <input
                 type='submit'
