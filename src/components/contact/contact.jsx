@@ -1,5 +1,6 @@
 import React from 'react';
 import ContactModal from './contactModal.jsx';
+import contactStyles from './contact.module.scss';
 
 const Contact = () => {
   return (
@@ -11,12 +12,12 @@ const Contact = () => {
           <strong className="center-text">me today.</strong>
         </div>
       </div>
-      <div className='resume-container'>
-        content
-      <br />
-        more content
-      <ContactModal />
+      <div className={contactStyles.contactContainer}>
+        <div>
+          this will be an image
         </div>
+        <ContactModal />
+      </div>
     </div>
   )
 }
