@@ -4,6 +4,7 @@ import contactStyles from './contact.module.scss';
 
 const ContactSnippet = (props) => {
 const { area } = props;
+
   return (
     <div className={contactStyles.contactSnippet}>
       <strong>Hire me today!</strong>
@@ -18,5 +19,4 @@ const { area } = props;
     </div>
   )
 }
-
 export default ContactSnippet;

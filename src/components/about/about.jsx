@@ -1,7 +1,7 @@
 import React from 'react';
 // import Contact from './contact.jsx';
 // import SocialMedia from './socialMedia.jsx';
-import ContactSnippet from '../contact/contactSnippet.jsx';
+import ContactSnippet from '../header/contactSnippet.jsx';
 import './about.css';
 
 const About = () => {
