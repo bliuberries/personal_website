@@ -13,7 +13,7 @@ export default class Icon extends React.Component {
       height: "50px",
       borderStyle: "solid",
       borderWidth: "2px",
-      borderColor: "asphalt",
+      borderColor: "#fff",
       transform: "rotate(45deg)",
       display: "flex",
       justifyContent: "center",
@@ -22,10 +22,10 @@ export default class Icon extends React.Component {
       width: ".5px",
       marginTop: "35%",
       marginBottom: "35%",
-      backgroundColor: "asphalt",
+      backgroundColor: "#fff",
       borderStyle: "solid",
       borderWidth: ".5px",
-      borderColor: "asphalt",
+      borderColor: "#fff",
     }
     
     const firstInit = {
@@ -33,7 +33,7 @@ export default class Icon extends React.Component {
       fontWeight: "bold",
       fontFamily: "Tangerine, serif",
       transform: "rotate(-45deg)translate(-65%, 25%)",
-      color: "asphalt",
+      color: "#fff",
       cursor: "default"
     }
 
@@ -42,7 +42,7 @@ export default class Icon extends React.Component {
       fontWeight: "bold",
       fontFamily: "Tangerine, serif",
       transform: "rotate(-45deg)translate(35%, 48%)",
-      color: "asphalt",
+      color: "#fff",
       cursor: "default"
     }
     return (
