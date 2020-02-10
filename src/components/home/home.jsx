@@ -1,21 +1,26 @@
 import React from 'react';
 import './home.css';
 
-class Home extends React.Component {
+const Home = (props) => {
+  const { cText, bgImage } = props;
 
-
-  render() {
-    return (
-      <div>
-          <div className="background">
-            <div className="center-text-container">
-              <strong className="center-text">DEVELOPER</strong>
-
-          </div>
+  return (
+    <div>
+      <div className="background" style={{backgroundImage: `url(${bgImage}`}}>
+        <div className="center-text-container">
+          {cText.map((text, index) => {
+            return (
+              <div key={index}>
+                <strong className="center-text" >{text}</strong>
+                <br />
+              </div>
+            )
+          })}
         </div>
       </div>
-    )
-  }
+    </div>
+  )
 }
+
 
 export default Home;
