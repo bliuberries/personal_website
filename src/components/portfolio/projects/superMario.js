@@ -1,9 +1,8 @@
 const superMario = {
   images: [
-    {src: 'https://i.imgur.com/hIBcO4H.gif'},
-    {src: 'https://i.imgur.com/v4NvXIL.gif'},
-    {src: 'https://i.imgur.com/vt7BJwm.gif'},
-    {src: 'https://i.imgur.com/tAerlpv.gif'}
+    {src: 'https://imgur.com/uNhGQD4.gif'},
+    {src: 'https://imgur.com/rdaF1Rb.gif'},
+    {src: 'https://imgur.com/Is2pQW2.gif'}
   ],
   title: 'Super Mario Clone',
   url: 'hosted website url',
