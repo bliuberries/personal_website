@@ -31,7 +31,7 @@ class Header extends React.Component {
               aStyle={
                 {color: 
                   this.state.currentPage === header.title 
-                  ? '#e1a87a' : '#000'}
+                  ? '#e1a87a' : '#fff'}
                 }
             />
           );
