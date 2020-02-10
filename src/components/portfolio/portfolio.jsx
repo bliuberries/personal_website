@@ -27,7 +27,6 @@ class Portfolio extends React.Component {
     this.state.projectName === 'Tetris' ? Tetris : superMario;
     return (
       <div>
-        {/* <Header props='Portfolio'/> */}
         <div className="background" >
           <div className="center-text-container">
             <span className="center-text">My Projects</span>
