@@ -1,8 +1,10 @@
 import React from 'react';
 import ContactModal from './contactModal.jsx';
 import contactStyles from './contact.module.scss';
+import myImage from '../../images/img2.jpg';
+import Home from '../home/home.jsx';
+import bgImage from '../../images/img4.jpg';
 
-import veggie from './../../images/oneVeggie.png';
 // const Contact = () => {
 
 class Contact extends React.Component {
@@ -10,15 +12,9 @@ class Contact extends React.Component {
   render() {
     return (
       <div className='contact'>
-        <div className="background" >
-          <div className="center-text-container">
-            <strong className="center-text">Connect with</strong>
-            <br />
-            <strong className="center-text">me today.</strong>
-          </div>
-        </div>
+        <Home cText={['Connect with', 'me today.']} bgImage={bgImage}/>
         <div className={contactStyles.contactContainer}>
-          <img className={contactStyles.image} src={veggie} alt=""/>
+          <img className={contactStyles.image} src={myImage} alt=""/>
           <ContactModal />
         </div>
       </div>
