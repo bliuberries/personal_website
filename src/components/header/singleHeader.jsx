@@ -6,12 +6,8 @@ import headerStyles from './header.module.scss';
 
 const SingleHeader = props => {
 
-  const onClick = () => {
-    props.onClick(props.headerTitle);
-  }
-
   return (
-    <div onClick={onClick} >
+    <div >
       <Link to={props.alias}>
         <strong className={headerStyles.navigationTitle}
           style={props.aStyle}>

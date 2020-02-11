@@ -4,27 +4,28 @@ import pages from './pages.js';
 import SingleHeader from './singleHeader.jsx';
 
 class Header extends React.Component {
-  constructor() {
-    super()
+  constructor(props) {
+    super(props)
     this.state = {
       currentPage: 'Home'
     };
 
-    this.clicked = this.clicked.bind(this);
+    // this.clicked = this.clicked.bind(this);
   }
 
-  clicked(page) {
-    this.setState({currentPage: page})
+  componentDidMount() {
+    this.setState({currentPage: this.props.location})
   }
 
   render() {
+
     return (
       <div>
         <Icon />
         {pages.map((header, index) => {
           return (
             <SingleHeader
-              onClick={this.clicked}
+              // onClick={this.clicked}
               key={index}
               headerTitle={header.title}
               alias={header.alias}
