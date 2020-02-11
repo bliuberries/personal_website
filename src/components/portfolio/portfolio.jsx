@@ -1,10 +1,14 @@
 import React from 'react';
+import Home from '../home/home.jsx';
 import Dropdown from './dropDown.jsx';
 import Project from './singleProject';
-import './portfolio.css';
 
 import Tetris from './projects/tetris.js';
 import superMario from './projects/superMario.js';
+
+import bgImage from '../../images/redForrest.jpg'
+
+import './portfolio.css';
 
 class Portfolio extends React.Component {
 
@@ -27,11 +31,7 @@ class Portfolio extends React.Component {
     this.state.projectName === 'Tetris' ? Tetris : superMario;
     return (
       <div>
-        <div className="background" >
-          <div className="center-text-container">
-            <span className="center-text">My Projects</span>
-          </div>
-        </div>
+        <Home cText={['My Projects']} bgImage={bgImage}/>
         <Dropdown fn={this.getCurrentValue.bind(this)} />
         <Project name={project} />
       </div>
