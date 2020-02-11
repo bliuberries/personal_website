@@ -1,12 +1,16 @@
 import React from 'react';
 import Home from '../home/home.jsx';
+import bgImage from '../../images/redForrest.jp2'
+
+//Portfolio components
 import Dropdown from './dropDown.jsx';
 import Project from './singleProject';
 
+
+//Projects
 import Tetris from './projects/tetris.js';
 import superMario from './projects/superMario.js';
 
-import bgImage from '../../images/redForrest.jpg'
 
 import './portfolio.css';
 

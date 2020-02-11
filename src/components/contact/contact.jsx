@@ -1,9 +1,9 @@
 import React from 'react';
 import ContactModal from './contactModal.jsx';
 import contactStyles from './contact.module.scss';
-import myImage from '../../images/img2.jpg';
+import myImage from '../../images/img2.jp2';
 import Home from '../home/home.jsx';
-import bgImage from '../../images/img4.jpg';
+import bgImage from '../../images/img4.jp2';
 
 // const Contact = () => {
 

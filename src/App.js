@@ -9,7 +9,7 @@ import Contact from './components/contact/contact.jsx';
 import Portfolio from './components/portfolio/portfolio.jsx';
 import ScrollToTop from './components/ScrollToTop.jsx';
 
-import bgImage from './images/img5.jpg';
+import bgImage from './images/img5.jp2';
 
 import './App.scss';
 

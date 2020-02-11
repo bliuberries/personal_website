@@ -7,7 +7,7 @@ import Download from './download.jsx';
 import Formatter from './formatter.jsx';
 
 import Home from '../home/home.jsx';
-import bgImage from '../../images/blueMountains.jpg';
+import bgImage from '../../images/sunflowerStars.jp2';
 
 //Resume content to display
 import skills from './resumePoints/skills.js'

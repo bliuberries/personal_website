@@ -1,9 +1,9 @@
 import React from 'react';
 import ContactSnippet from '../header/contactSnippet.jsx';
-import myImage from '../../images/img2.jpg';
+import myImage from '../../images/img2.jp2';
 import Home from '../home/home.jsx';
 
-import bgImage from '../../images/img6.jpg'
+import bgImage from '../../images/img6.jp2'
 
 import aboutStyles from './about.module.scss';
 
