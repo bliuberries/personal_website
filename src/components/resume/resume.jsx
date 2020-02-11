@@ -6,6 +6,9 @@ import Download from './download.jsx';
 //Formatting the resume
 import Formatter from './formatter.jsx';
 
+import Home from '../home/home.jsx';
+import bgImage from '../../images/blueMountains.jpg';
+
 //Resume content to display
 import skills from './resumePoints/skills.js'
 import education from './resumePoints/education.js'
@@ -17,18 +20,9 @@ import ContactSnippet from '../header/contactSnippet.jsx';
 const Resume = () => {
   return (
     <div className='resume'>
-      <div className="background" >
-        <div className="center-text-container">
-          <strong className="center-text">Dig a little</strong>
-          <br />
-          <strong className="center-text">deeper.</strong>
-          <br/>
-          <br/>
-          <Download />
-        </div>
-      </div>
+      <Home cText={['Dig a little', 'deeper.']} bgImage={bgImage} Button={Download}/>
       <div className='resume-container'>
-        <Formatter skills={skills} education={education} work={workExperience}/>
+        <Formatter skills={skills} education={education} work={workExperience} />
       </div>
       <ContactSnippet />
     </div>
