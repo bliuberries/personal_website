@@ -1,10 +1,14 @@
 import React from 'react';
+import Header from '../header/header.jsx';
 import './home.module.scss';
 
 const Home = (props) => {
-  let { cText, bgImage, Button} = props;
+  let { cText, bgImage, Button, location} = props;
+  if(location === undefined) location = 'Home'
+  
   return (
     <div>
+      <Header location={location}/>
       <div className="background" style={{backgroundImage: `url(${bgImage}`}}>
         <div className="center-text-container">
           {cText.map((text, index) => {
