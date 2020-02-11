@@ -1,9 +1,8 @@
 import React from 'react';
-import './home.css';
+import './home.module.scss';
 
 const Home = (props) => {
-  const { cText, bgImage } = props;
-
+  let { cText, bgImage, Button} = props;
   return (
     <div>
       <div className="background" style={{backgroundImage: `url(${bgImage}`}}>
@@ -16,6 +15,8 @@ const Home = (props) => {
               </div>
             )
           })}
+          <br/>
+          {Button !== undefined ? <Button /> : null}
         </div>
       </div>
     </div>
