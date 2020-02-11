@@ -10,7 +10,7 @@ import aboutStyles from './about.module.scss';
 const About = () => {
   return (
     <div>
-      <Home cText={['My Passions &', 'Personality']} bgImage={bgImage}/>
+      <Home cText={['My Passions &', 'Personality']} bgImage={bgImage} location='About Me'/>
       <div className={aboutStyles.aboutMeGridContainer}>
         <div>
           <img

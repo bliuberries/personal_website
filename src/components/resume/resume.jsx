@@ -20,7 +20,10 @@ import ContactSnippet from '../header/contactSnippet.jsx';
 const Resume = () => {
   return (
     <div className='resume'>
-      <Home cText={['Dig a little', 'deeper.']} bgImage={bgImage} Button={Download}/>
+      <Home cText={['Dig a little', 'deeper.']} 
+      bgImage={bgImage} 
+      Button={Download} 
+      location='Resume'/>
       <div className='resume-container'>
         <Formatter skills={skills} education={education} work={workExperience} />
       </div>

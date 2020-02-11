@@ -31,7 +31,7 @@ class Portfolio extends React.Component {
     this.state.projectName === 'Tetris' ? Tetris : superMario;
     return (
       <div>
-        <Home cText={['My Projects']} bgImage={bgImage}/>
+        <Home cText={['My Projects']} bgImage={bgImage} location='Portfolio'/>
         <Dropdown fn={this.getCurrentValue.bind(this)} />
         <Project name={project} />
       </div>

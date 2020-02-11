@@ -12,7 +12,7 @@ class Contact extends React.Component {
   render() {
     return (
       <div className='contact'>
-        <Home cText={['Connect with', 'me today.']} bgImage={bgImage}/>
+        <Home cText={['Connect with', 'me today.']} bgImage={bgImage} location='Contact' />
         <div className={contactStyles.contactContainer}>
           <img className={contactStyles.image} src={myImage} alt=""/>
           <ContactModal />
