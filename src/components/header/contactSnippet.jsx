@@ -2,8 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import contactStyles from '../contact/contact.module.scss';
 
-const ContactSnippet = (props) => {
-const { area } = props;
+const ContactSnippet = () => {
 
   return (
     <div className={contactStyles.contactSnippet}>
