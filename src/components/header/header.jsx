@@ -9,8 +9,6 @@ class Header extends React.Component {
     this.state = {
       currentPage: 'Home'
     };
-
-    // this.clicked = this.clicked.bind(this);
   }
 
   componentDidMount() {
@@ -25,7 +23,6 @@ class Header extends React.Component {
         {pages.map((header, index) => {
           return (
             <SingleHeader
-              // onClick={this.clicked}
               key={index}
               headerTitle={header.title}
               alias={header.alias}
