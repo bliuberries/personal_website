@@ -1,0 +1,35 @@
+.aboutMeGridContainer {
+  width: 100%;
+  height: 90vh;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  column-gap: 2%;
+}
+
+.textBlock {
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  margin: 10% 15%;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.aboutMeDescription {
+  line-height: 2em;
+}
+
+.myPhoto {
+  margin: 15% 30%;
+  width: 70%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 10px -1px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.04),
+    0 1px 0 rgba(0, 0, 0, 0.04);
+  padding: 5%;
+}
+
+.positionTitle {
+  font-weight: 800;
+  font-size: 1.5em;
+  letter-spacing: 0.1em;
+}
