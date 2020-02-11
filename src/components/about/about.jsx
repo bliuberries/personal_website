@@ -3,33 +3,26 @@ import ContactSnippet from '../header/contactSnippet.jsx';
 import myImage from '../../images/img2.jpg';
 import Home from '../home/home.jsx';
 
-import bgImage from '../../images/sunflowerStars.jpg'
+import bgImage from '../../images/img6.jpg'
 
-import './about.css';
+import aboutStyles from './about.module.scss';
 
 const About = () => {
   return (
     <div>
-      {/* <div className="background" >
-        <div className="center-text-container">
-          <strong className="center-text">My Passions & </strong>
-          <br />
-          <strong className="center-text">Personality</strong>
-        </div>
-      </div> */}
       <Home cText={['My Passions &', 'Personality']} bgImage={bgImage}/>
-      <div className="about-me-grid-container">
+      <div className={aboutStyles.aboutMeGridContainer}>
         <div>
           <img
             src={myImage}
-            className="my-photo"
+            className={aboutStyles.myPhoto}
             alt=""
           />
         </div>
-        <div className="text-block">
-          <div className="position-title">A few fun facts about myself</div>
+        <div className={aboutStyles.textBlock}>
+          <div className={aboutStyles.positionTitle}>A few fun facts about myself</div>
           <br />
-          <div className="about-me-description">
+          <div className={aboutStyles.aboutMeDescription}>
             I work out of San Jose CA, I enjoy french press medium roast, I play volleyball, I'm not a fan of IPAs, my favorite food is Black Garlic Tonkotsu Ramen, I practice piano, and I like to unwind with video games.
             <br />
             <br />
