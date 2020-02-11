@@ -1,23 +1,27 @@
 import React from 'react';
-// import Contact from './contact.jsx';
-// import SocialMedia from './socialMedia.jsx';
 import ContactSnippet from '../header/contactSnippet.jsx';
+import myImage from '../../images/img2.jpg';
+import Home from '../home/home.jsx';
+
+import bgImage from '../../images/sunflowerStars.jpg'
+
 import './about.css';
 
 const About = () => {
   return (
     <div>
-      <div className="background" >
+      {/* <div className="background" >
         <div className="center-text-container">
           <strong className="center-text">My Passions & </strong>
           <br />
           <strong className="center-text">Personality</strong>
         </div>
-      </div>
+      </div> */}
+      <Home cText={['My Passions &', 'Personality']} bgImage={bgImage}/>
       <div className="about-me-grid-container">
         <div>
           <img
-            src="https://i.imgur.com/10umV99.jpg"
+            src={myImage}
             className="my-photo"
             alt=""
           />
