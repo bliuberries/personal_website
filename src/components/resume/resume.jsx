@@ -7,7 +7,7 @@ import Download from './download.jsx';
 import Formatter from './formatter.jsx';
 
 import Home from '../home/home.jsx';
-import bgImage from '../../images/sunflowerStars.jp2';
+// import bgImage from '../../images/sunflowerStars.jp2';
 
 //Resume content to display
 import skills from './resumePoints/skills.js'
@@ -21,7 +21,7 @@ const Resume = () => {
   return (
     <div className='resume'>
       <Home cText={['Dig a little', 'deeper.']} 
-      bgImage={bgImage} 
+      bgImage='resume'
       Button={Download} 
       location='Resume'/>
       <div className='resume-container'>

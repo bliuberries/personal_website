@@ -1,16 +1,16 @@
 import React from 'react';
 import ContactSnippet from '../header/contactSnippet.jsx';
-import myImage from '../../images/img2.jp2';
+import myImage from '../../images/contactSnip.webp';
 import Home from '../home/home.jsx';
 
-import bgImage from '../../images/img6.jp2'
+// import bgImage from '../../images/img6.jp2'
 
 import aboutStyles from './about.module.scss';
 
 const About = () => {
   return (
     <div>
-      <Home cText={['My Passions &', 'Personality']} bgImage={bgImage} location='About Me'/>
+      <Home cText={['My Passions &', 'Personality']} bgImage='about' location='About Me'/>
       <div className={aboutStyles.aboutMeGridContainer}>
         <div>
           <img

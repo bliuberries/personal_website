@@ -1,6 +1,6 @@
 import React from 'react';
 import Home from '../home/home.jsx';
-import bgImage from '../../images/redForrest.jp2'
+// import bgImage from '../../images/redForrest.jp2'
 
 //Portfolio components
 import Dropdown from './dropDown.jsx';
@@ -35,7 +35,7 @@ class Portfolio extends React.Component {
     this.state.projectName === 'Tetris' ? Tetris : superMario;
     return (
       <div>
-        <Home cText={['My Projects']} bgImage={bgImage} location='Portfolio'/>
+        <Home cText={['My Projects']} bgImage='portfolio' location='Portfolio'/>
         <Dropdown fn={this.getCurrentValue.bind(this)} />
         <Project name={project} />
       </div>
