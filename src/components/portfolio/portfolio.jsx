@@ -1,6 +1,5 @@
 import React from 'react';
 import Home from '../home/home.jsx';
-// import bgImage from '../../images/redForrest.jp2'
 
 //Portfolio components
 import Dropdown from './dropDown.jsx';

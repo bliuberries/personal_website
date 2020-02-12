@@ -7,7 +7,6 @@ import Download from './download.jsx';
 import Formatter from './formatter.jsx';
 
 import Home from '../home/home.jsx';
-// import bgImage from '../../images/sunflowerStars.jp2';
 
 //Resume content to display
 import skills from './resumePoints/skills.js'
@@ -15,7 +14,6 @@ import education from './resumePoints/education.js'
 import workExperience from './resumePoints/workExperience.js'
 
 import ContactSnippet from '../header/contactSnippet.jsx';
-// import resumeStyles from './resume.scss';
 
 const Resume = () => {
   return (

@@ -3,8 +3,6 @@ import ContactSnippet from '../header/contactSnippet.jsx';
 import myImage from '../../images/contactSnip.webp';
 import Home from '../home/home.jsx';
 
-// import bgImage from '../../images/img6.jp2'
-
 import aboutStyles from './about.module.scss';
 
 const About = () => {
