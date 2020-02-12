@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '../header/header.jsx';
 import CenterText from './centerText.jsx';
-import homeStyle from './home.module.scss';
+import homeStyles from './home.module.scss';
 
 const Home = (props) => {
   let { cText, Button, location} = props;
@@ -11,7 +11,7 @@ const Home = (props) => {
     <div>
       <Header location={location}/>
       <div className="background" >
-        <div className="center-text-container">
+        <div className={homeStyles.centerTextContainer}>
           {cText.map((text, index) => {
             return (
               <CenterText text={text} key={index}/>

@@ -12,8 +12,36 @@
   align-content: center;
 }
 
-@media only screen and (max-width: 600px) {
+.centerTextContainer {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  -webkit-transform: translate(-100%, -50%);
+  transform: translate(-100%, -50%);
+}
+
+.centerText {
+  font-family: 'Roboto', sans-serif !important;
+  display: block;
+  font-size: 74px;
+  font-weight: 600;
+  letter-spacing: .015em;
+  line-height: 1em;
+  color: #fff;
+}
+
+@media only screen and (max-width: 400px) {
   .home {
     background-image: url('../../images/home.webp');
+  }
+
+  .centerText {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (min-width: 601) {
+  .centerText {
+    font-size: 48px;
   }
 }
