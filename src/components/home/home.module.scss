@@ -1,15 +1,6 @@
 .home {
   background-image: url('../../images/home.jpg');
-  background-repeat: no-repeat;
-  max-width: 100%;
-  min-height: 100%;
-  min-width: 1024px;
-  height: 100vh;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
-  align-content: center;
 }
 
 .centerTextContainer {
@@ -17,7 +8,7 @@
   left: 50%;
   position: absolute;
   -webkit-transform: translate(-100%, -50%);
-  transform: translate(-100%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .centerText {
@@ -28,6 +19,23 @@
   letter-spacing: .015em;
   line-height: 1em;
   color: #fff;
+}
+
+.button {
+  top:65%;
+  left: 28%;
+  position: relative;
+  padding: 21px 34px;
+  font-size: 11px;
+  background-color: transparent;
+  border: 1px solid #e1a87a;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+   &:hover {
+    background-color: #e1a87a;
+    color: #000;
+   }
 }
 
 @media only screen and (max-width: 400px) {

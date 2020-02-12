@@ -18,7 +18,7 @@ const Home = (props) => {
             )
           })}
           <br/>
-          {Button !== undefined ? <Button /> : null}
+          {Button !== undefined ? <Button className={homeStyles.button}/> : null}
         </div>
       </div>
     </div>
