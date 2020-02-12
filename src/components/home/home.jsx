@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from '../header/header.jsx';
+import CenterText from './centerText.jsx';
 import './home.module.scss';
 
 const Home = (props) => {
@@ -17,10 +18,7 @@ const Home = (props) => {
         <div className="center-text-container">
           {cText.map((text, index) => {
             return (
-              <div key={index}>
-                <strong className="center-text" >{text}</strong>
-                <br />
-              </div>
+              <CenterText text={text} key={index}/>
             )
           })}
           <br/>
