@@ -1,5 +1,6 @@
 .resume {
   background-image: url('../../images/resume.jpg');
+  background-size: cover;
   background-repeat: no-repeat;
   max-width: 100%;
   min-height: 100%;
@@ -8,7 +9,6 @@
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
   align-content: center;
 }
 
@@ -20,10 +20,10 @@
   border: 1px solid #e1a87a;
   text-decoration: none;
   text-transform: uppercase;
-  color: black;
+  color: #fff;
    &:hover {
     background-color: #e1a87a;
-    color: white;
+    color: #000;
    }
 }
 

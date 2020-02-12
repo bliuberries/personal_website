@@ -19,10 +19,10 @@ const Formatter = (props) => {
       <div className={resumeStyles.gridA}>
         <ul className={resumeStyles.item1}>
           Work Experience
-          </ul>
+        </ul>
         <ul className={resumeStyles.item2}>
           {work.map((item, index) => {
-            let key = item.key.length > 0 ? <div> Key Achievements </div> : null;
+            let key = item.key.length > 0 ? <strong> Key Achievements </strong> : null;
             return (
               <div key={index}>
                 <strong>
@@ -37,8 +37,7 @@ const Formatter = (props) => {
                       <br />
                     </strong>
                   )
-                })}
-                <ul>
+                })}                
                   {item.experience.map((exp, index) => {
                     return (
                       <li key={index}>{exp}</li>
@@ -50,7 +49,6 @@ const Formatter = (props) => {
                       <li key={index}>{bullets}</li>
                     )
                   })}
-                </ul>
                 <br/>
               </div>
             )
