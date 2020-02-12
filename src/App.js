@@ -7,6 +7,7 @@ import Resume from './components/resume/resume.jsx';
 import Contact from './components/contact/contact.jsx';
 import Portfolio from './components/portfolio/portfolio.jsx';
 import ScrollToTop from './components/ScrollToTop.jsx';
+import homeStyle from './components/home/home.module.scss';
 
 import './App.scss';
 
@@ -16,7 +17,10 @@ const App = () => {
     <div className="App">
       <ScrollToTop >
         <Switch>
-          <Route exact path='/' render={() => <Home cText={['DEVELOPER']} bgImage='home'/>} />
+          <Route exact path='/' render={() => 
+          <div className={homeStyle.home}>
+            <Home cText={['DEVELOPER']} />
+          </div>} />
           <Route exact path='/about' component={About} />
           <Route exact path='/portfolio' component={Portfolio} />
           <Route exact path='/resume' component={Resume} />
