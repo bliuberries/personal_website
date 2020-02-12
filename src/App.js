@@ -1,7 +1,6 @@
 import React from 'react';
 import { Switch, Route } from "react-router-dom";
 
-// import Header from './components/header/header.jsx';
 import Home from './components/home/home.jsx';
 import About from './components/about/about.jsx';
 import Resume from './components/resume/resume.jsx';
@@ -17,7 +16,6 @@ const App = () => {
 
   return (
     <div className="App">
-      {/* <Header /> */}
       <ScrollToTop >
         <Switch>
           <Route exact path='/' render={() => <Home cText={['DEVELOPER']} bgImage={bgImage}/>} />
