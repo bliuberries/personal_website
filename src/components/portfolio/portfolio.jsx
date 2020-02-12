@@ -10,7 +10,8 @@ import Project from './singleProject';
 import Tetris from './projects/tetris.js';
 import superMario from './projects/superMario.js';
 
-
+//CSS
+import portStyles from './portfolio.module.scss';
 
 
 class Portfolio extends React.Component {
@@ -33,8 +34,8 @@ class Portfolio extends React.Component {
     this.state.projectName === 'Super Mario Clone' ? superMario : 
     this.state.projectName === 'Tetris' ? Tetris : superMario;
     return (
-      <div>
-        <Home cText={['My Projects']} bgImage='portfolio' location='Portfolio'/>
+      <div className={portStyles.portfolio}>
+        <Home cText={['My Projects']} location='Portfolio'/>
         <Dropdown fn={this.getCurrentValue.bind(this)} />
         <Project name={project} />
       </div>

@@ -6,6 +6,7 @@ import Download from './download.jsx';
 //Formatting the resume
 import Formatter from './formatter.jsx';
 
+//Home component
 import Home from '../home/home.jsx';
 
 //Resume content to display
@@ -15,11 +16,13 @@ import workExperience from './resumePoints/workExperience.js'
 
 import ContactSnippet from '../header/contactSnippet.jsx';
 
+//CSS
+import resumeStyles from './resume.module.scss';
+
 const Resume = () => {
   return (
-    <div className='resume'>
+    <div className={resumeStyles.resume}>
       <Home cText={['Dig a little', 'deeper.']} 
-      bgImage='resume'
       Button={Download} 
       location='Resume'/>
       <div className='resume-container'>

@@ -6,8 +6,8 @@ import Home from '../home/home.jsx';
 
 const Contact = () => {
   return (
-    <div className='contact'>
-      <Home cText={['Connect with', 'me today.']} bgImage='contact' location='Contact' />
+    <div className={contactStyles.contact}>
+      <Home cText={['Connect with', 'me today.']} location='Contact' />
       <div className={contactStyles.contactContainer}>
         <img className={contactStyles.image} src={myImage} alt="" />
         <ContactModal />
