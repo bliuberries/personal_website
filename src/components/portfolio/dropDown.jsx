@@ -1,13 +1,14 @@
 import React from 'react';
+import portStyles from './portfolio.module.scss';
 
 const Dropdown = (props) => {
   const { fn } = props;
 
   return (
-    <div className='project-list-container'>
-      <div className='project-list-title'>
+    <div className={portStyles.projectListContainer}>
+      <div className={portStyles.projectListTitle}>
         PROJECTS:
-          <select className='project-name' onChange={fn}>
+          <select className={portStyles.projectName} onChange={fn}>
           <option>Super Mario Clone</option>
           <option>To Do App</option>
           <option>Tetris</option>

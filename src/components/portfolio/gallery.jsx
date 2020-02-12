@@ -35,11 +35,9 @@ const customStyles = {
   }),
   view: (base, state) => ({
     ...base,
-    filter: state.interactionIsIdle ? 'grayscale(100%)' : null,
     paddingBottom: `${10 / 16 * 100}%`,
     overflow: 'hidden',
     position: 'relative',
-    transition: 'filter 300ms',
     maxHeight: '60vh',
   }),
 

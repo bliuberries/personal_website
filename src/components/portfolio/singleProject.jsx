@@ -1,36 +1,38 @@
 import React from 'react';
 import Gallery from './gallery.jsx';
+import portStyles from './portfolio.module.scss';
+
 
 const Project = (props) => {
   return (
-    <div className="portfolio-container">
+    <div className={portStyles.portfolioContainer}>
       <div>
-        <div className="image-gallery">
+        <div className={portStyles.imageGallery}>
           <Gallery projectImages={props.name.images} />
         </div>
       </div>
-      <div className="text-block-portfolio">
-        <div className="position-title">{props.name.title}</div>
+      <div className={portStyles.textBlockPortfolio}>
+        <div className={portStyles.positionTitle}>{props.name.title}</div>
         <br />
-        <div className='text-description'>
+        <div className={portStyles.textDescription}>
           {props.name.description}
           <br />
           <br />
-          <div className='tech-stack'>Tech: {props.name.techStack}</div>
+          <div className={portStyles.techStack}>Tech: {props.name.techStack}</div>
         </div>
         <br />
-        <div className="checkout-box">
-          <div className="portfolio-button">
+        <div className={portStyles.checkoutBox}>
+          <div className={portStyles.portfolioButton}>
             <a
               href={props.name.url}
-              className="checkout-button"
+              className={portStyles.checkoutButton}
               target="_blank"
               rel="noopener noreferrer"
             >
               CHECK IT OUT
             </a>
           </div>
-          <div className="portfolio-button">
+          <div className={portStyles.portfolioButton}>
             <a
               href={props.name.github}
               target="_blank"
@@ -39,7 +41,7 @@ const Project = (props) => {
               <img
                 src="https://cdn4.iconfinder.com/data/icons/liu-square-blac/60/github-square-social-media-512.png"
                 alt="github"
-                className="checkout-icons"
+                className={portStyles.checkoutIcons}
               />
             </a>
           </div>

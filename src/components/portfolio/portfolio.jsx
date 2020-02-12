@@ -11,7 +11,7 @@ import Tetris from './projects/tetris.js';
 import superMario from './projects/superMario.js';
 
 
-import './portfolio.css';
+
 
 class Portfolio extends React.Component {
 
