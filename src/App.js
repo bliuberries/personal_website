@@ -8,8 +8,6 @@ import Contact from './components/contact/contact.jsx';
 import Portfolio from './components/portfolio/portfolio.jsx';
 import ScrollToTop from './components/ScrollToTop.jsx';
 
-import bgImage from './images/img5.jp2';
-
 import './App.scss';
 
 const App = () => {
@@ -18,7 +16,7 @@ const App = () => {
     <div className="App">
       <ScrollToTop >
         <Switch>
-          <Route exact path='/' render={() => <Home cText={['DEVELOPER']} bgImage={bgImage}/>} />
+          <Route exact path='/' render={() => <Home cText={['DEVELOPER']} bgImage='home'/>} />
           <Route exact path='/about' component={About} />
           <Route exact path='/portfolio' component={Portfolio} />
           <Route exact path='/resume' component={Resume} />
