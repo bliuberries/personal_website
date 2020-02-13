@@ -5,7 +5,6 @@ import Home from '../home/home.jsx';
 import Dropdown from './dropDown.jsx';
 import Project from './singleProject';
 
-
 //Projects
 import Tetris from './projects/tetris.js';
 import superMario from './projects/superMario.js';
@@ -16,7 +15,6 @@ import portStyles from './portfolio.module.scss';
 
 
 class Portfolio extends React.Component {
-
   constructor() {
     super();
     this.state = {

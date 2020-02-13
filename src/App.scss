@@ -20,19 +20,19 @@ body {
   align-content: center;
 }
 
-.button {
-  top:65%;
-  left: 28%;
-  position: relative;
-  padding: 21px 34px;
-  font-size: 11px;
-  background-color: transparent;
-  border: 1px solid #e1a87a;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: black;
-   &:hover {
-    background-color: #e1a87a;
-    color: white;
-   }
+
+@media only screen and (max-width: 400px) {
+  .background {
+    
+  }
+
+  .centerText {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (min-width: 601) {
+  .centerText {
+    font-size: 48px;
+  }
 }
