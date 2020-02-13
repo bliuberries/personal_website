@@ -1,6 +1,6 @@
 import React from 'react';
 import ContactSnippet from '../header/contactSnippet.jsx';
-import myImage from '../../images/aboutSnip.webp';
+import images from '../images.js';
 import Home from '../home/home.jsx';
 
 import aboutStyles from './about.module.scss';
@@ -12,7 +12,7 @@ const About = () => {
       <div className={aboutStyles.aboutGridContainer}>
         <div className={aboutStyles.imageContainer}>
           <img
-            src={myImage}
+            src={images.aboutSnip}
             className={aboutStyles.myPhoto}
             alt=""
           />
