@@ -1,14 +1,13 @@
 const myWebsite = {
   images: [
-    {src: 'https://imgur.com/uNhGQD4.gif'},
-    {src: 'https://imgur.com/rdaF1Rb.gif'},
-    {src: 'https://imgur.com/Is2pQW2.gif'}
+    {src: 'https://imgur.com/kl1WkJC.gif'},
+    {src: 'https://imgur.com/TxpnV3W.gif'}
   ],
   title: 'My Website',
-  url: 'http://www.bradyliu.com/',
-  github: 'https://github.com/bliuberries/superMario',
-  description: 'While creating Super Mario, one of my biggest struggles was getting Mario to interact properly with the environment. When I finally figured out how to jump, I realized I was able to fly (by pressing the space bar repeatedly) and needed to correct that by making it so he can only jump when he was on the ground. Then when I created more objects(walls and platforms), I needed to make sure I wasn\'t flying through walls and thus needed to create a collision layer to detect when Mario came in contact with the walls and was then able to make it so walls were impassable. My favorite thing about this project was being able to create Goomba and thus had to handle what would happen when Mario ran into him from the side vs when he was stomped on. The logic didn\'t get easier when I was creating Koopa, but it was a major breakthrough in the creation process.',
-  techStack: 'Javascript, Serve, Style-loader'
+  url: 'https://www.bradyliu.com/',
+  github: 'https://github.com/bliuberries/personal_website',
+  description: 'Creating this from scratch really tested my abilities as a developer. I would constantly build something out, and then delete it just to rebuild it again differently. The way I import images and handle how I manipulate files so that I can go straight to an individual piece that I want to change with ease. My favorite and most hated thing about this project was being able to change the color of the header based on what page I was on. I probably re-wrote that piece of code five times, changing small bits between multiple files before ultimately being satisfied with how I decoupled it. What I learned about this is that perfection is not a destination but a journey and a never ending one at that.',
+  techStack: 'React, Javascript, Netlify'
 }
 
 export default myWebsite;
