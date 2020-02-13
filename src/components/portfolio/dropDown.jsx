@@ -10,7 +10,7 @@ const Dropdown = (props) => {
         PROJECTS:
           <select className={portStyles.projectName} onChange={fn}>
           <option>Super Mario Clone</option>
-          <option>To Do App</option>
+          <option>My Website</option>
           <option>Tetris</option>
         </select>
       </div>
