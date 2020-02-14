@@ -38,18 +38,21 @@
    }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 800px) {
   .home {
-    background-image: url('https://imgur.com/VfabQxi.png');
+    background-image: url('https://imgur.com/05mipOY.png');
   }
 
+}
+
+@media only screen and (max-width: 600px) {
   .centerText {
-    font-size: 30px;
+    font-size: 38px;
   }
 }
 
-@media only screen and (min-width: 601) {
+@media only screen and (max-width: 400px) {
   .centerText {
-    font-size: 48px;
+    font-size: 30px;
   }
 }
