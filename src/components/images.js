@@ -1,6 +1,6 @@
 const images = {
   about: 'https://imgur.com/sSsuVL0.png',
-  aboutSnip: 'https://i.imgur.com/kBs1NnH.png',
+  aboutSnip: 'https://imgur.com/gV1gFM1.png',
   contact: 'https://imgur.com/Vwr6HJg.png',
   contactSnip: 'https://imgur.com/UBcwRCM.png',
   home: 'https://imgur.com/VfabQxi.png',
