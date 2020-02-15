@@ -5,7 +5,7 @@ const images = {
   contactSnip: 'https://imgur.com/UBcwRCM.png',
   home: 'https://imgur.com/VfabQxi.png',
   portfolio: 'https://imgur.com/WWhQH33.png',
-  resume: 'https://imgur.com/elDesEk.png'
+  resume: 'https://imgur.com/tZt6zMv.png'
 }
 
 export default images;
