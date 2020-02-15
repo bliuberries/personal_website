@@ -31,8 +31,8 @@ export default class Icon extends React.Component {
     const firstInit = {
       fontSize: "15px",
       fontWeight: "bold",
-      fontFamily: "Tangerine, serif",
-      transform: "rotate(-45deg)translate(-65%, 25%)",
+      fontFamily: 'Raleway, sans-serif',
+      transform: "rotate(-45deg)translate(-35%, 22%)",
       color: "#fff",
       cursor: "default"
     }
@@ -40,8 +40,8 @@ export default class Icon extends React.Component {
     const lastInit = {
       fontSize: "15px",
       fontWeight: "bold",
-      fontFamily: "Tangerine, serif",
-      transform: "rotate(-45deg)translate(35%, 48%)",
+      fontFamily: 'Raleway, sans-serif',
+      transform: "rotate(-45deg)translate(55%, 42%)",
       color: "#fff",
       cursor: "default"
     }
