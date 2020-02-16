@@ -66,39 +66,71 @@
   width: 100%;
   height: 10%;
   display: flex;
+
+  .portfolioButton {
+    height: 100%;
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5%;
+
+    .checkoutIcons {
+      height: 100%;
+      width: 15%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      margin: 0% 2.5%;
+    }
+
+    .checkoutButton {
+      background-color: #000;
+      color: #fff;
+      letter-spacing: 0.1em;
+      height: 80%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      text-decoration: none;
+    }
+  }
 }
 
-.checkoutBox > .portfolioButton {
-  height: 100%;
-  width: 35%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 5%;
-}
+// .checkoutBox > .portfolioButton {
+//   height: 100%;
+//   width: 35%;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   margin-right: 5%;
+// }
 
-.checkoutBox > .portfolioButton > a > .checkoutIcons {
-  height: 100%;
-  width: 15%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  margin: 0% 2.5%;
-}
+// .checkoutBox > .portfolioButton > a > .checkoutIcons {
+//   height: 100%;
+//   width: 15%;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   cursor: pointer;
+//   margin: 0% 2.5%;
+// }
 
-.checkoutBox > .portfolioButton > .checkoutButton {
-  background-color: #000;
-  color: #fff;
-  letter-spacing: 0.1em;
-  height: 80%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  text-decoration: none;
-}
+// .checkoutBox > .portfolioButton > .checkoutButton {
+//   background-color: #000;
+//   color: #fff;
+//   letter-spacing: 0.1em;
+//   height: 80%;
+//   width: 100%;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   cursor: pointer;
+//   text-decoration: none;
+// }
 
 @media only screen and (min-width: 300px) {
   .projectListContainer {
