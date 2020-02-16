@@ -27,6 +27,7 @@ class Header extends React.Component {
               key={index}
               headerTitle={header.title}
               alias={header.alias}
+              css={header.css}
               aStyle={
                 {color: 
                   this.state.currentPage === header.title 
