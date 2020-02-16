@@ -1,23 +1,28 @@
 const pages = [
   {
     title: 'Contact',
-    alias: '/contact',
+    alias: 'contact',
+    css: 'contact'
   },
   {
     title: 'Resume',
-    alias: '/resume',
+    alias: 'resume',
+    css: 'resume'
   },
   {
     title: 'Portfolio',
-    alias: '/portfolio',
+    alias: 'portfolio',
+    css: 'portfolio'
   },
   {
     title: 'About Me',
-    alias: '/about',
+    alias: 'about',
+    css: 'about'
   },
   {
     title: 'Home',
-    alias: '/',
+    alias: '',
+    css: 'home'
   },
 ];
 
