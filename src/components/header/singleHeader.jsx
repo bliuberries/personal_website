@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import classnames from 'classnames';
 import hStyles from './header.module.scss';
 
 
@@ -16,7 +16,7 @@ const SingleHeader = props => {
     <Link 
     to={'/' + props.alias} 
     className={
-      hStyles.navigationTitle
+      classnames(hStyles.navigationTitle,navCss)
     }
     style={props.aStyle}>
         {props.headerTitle}
