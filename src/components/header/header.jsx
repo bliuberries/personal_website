@@ -4,6 +4,8 @@ import pages from './pages.js';
 import SingleHeader from './singleHeader.jsx';
 import hStyles from './header.module.scss';
 
+import Toolbar from './hamburgerMenu/toolbar.js';
+
 class Header extends React.Component {
   constructor(props) {
     super(props)
@@ -20,6 +22,7 @@ class Header extends React.Component {
 
     return (
       <div className={hStyles.headerContainer} >
+        <Toolbar />
         <Icon className={hStyles.icon}/>
         {pages.map((header, index) => {
           return (
