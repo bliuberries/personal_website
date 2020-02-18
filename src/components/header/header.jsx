@@ -22,7 +22,7 @@ class Header extends React.Component {
 
     return (
       <div className={hStyles.headerContainer} >
-        <Toolbar />
+        {/* <Toolbar /> */}
         <Icon className={hStyles.icon}/>
         {pages.map((header, index) => {
           return (
