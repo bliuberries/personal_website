@@ -5,7 +5,7 @@ const Download = () => {
   return (
       <a 
       className={resumeStyles.button}
-      href="https://github.com/bliuberries/resume/raw/master/Brady-Liu-%20Resume.pdf" target="_blank"
+      href="https://github.com/bliuberries/resume/raw/master/Brady%20Liu%20Resume%202020.pdf" target="_blank"
       rel="noopener noreferrer"
       >Download Resume →</a>
   )
