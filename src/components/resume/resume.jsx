@@ -16,7 +16,7 @@ import workExperience from './resumePoints/workExperience.js'
 
 import ContactSnippet from '../header/contactSnippet.jsx';
 
-//CSS
+//CSS 
 import resumeStyles from './resume.module.scss';
 
 const Resume = () => {
