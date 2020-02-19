@@ -1,9 +1,5 @@
 import React from 'react';
-
-// import Header from '../header/header.jsx';
-
 import Navbar from '../header/hamburgerMenu/navbar.js';
-
 import CenterText from './centerText.jsx';
 import homeStyles from './home.module.scss';
 import SidePanel from '../header/hamburgerMenu/sidePanel/sidePanel.jsx';
