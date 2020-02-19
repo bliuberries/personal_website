@@ -4,9 +4,64 @@
   height: 64px;
   top: 0;
   left: 0;
-  // background: orangered;
 }
 
+.backDrop {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 100;
+}
+
+button {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 24px;
+  width: 30px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  box-sizing: border-box;
+  margin-left: 20px;
+  &:focus {
+    outline: none;
+  }
+}
+
+.sidePanel {
+  height: 100%;
+  background: rgba(19, 17, 17, 0.9);
+  box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  max-width: 300px;
+  width: 50%;
+  z-index: 200;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-out;
+
+  &.open{
+    transform: translateX(0)
+  }
+}
+
+.sidePanelul {
+  height: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.line {
+  width: 30px;
+  height: 2px;
+  background: #fff;
+}
 .logo {
   text-decoration: none;
   color: white;
@@ -25,7 +80,8 @@
   padding: 0;
 }
 
-.navItems {
+.navItem {
+  margin: 0.5rem 0;
   text-decoration: none;
   color: white;
   display: flex;
@@ -61,53 +117,15 @@
     transition: width .3s;
   }
 }
-// @import 'https://fonts.googleapis.com/css?family=Open+Sans';
-// $itemSize: 40px;
 
-// .menu {
-//   position: absolute;
+@media (max-width: 768px) {
+  .navItems {
+    display: none;
+  }
+}
 
-// }
-
-
-
-//menu icon css
-// .center {
-//   position: absolute;
-//   margin: auto;
-//   top: 0;
-//   right: 0;
-//   bottom: 0;
-//   left: 0;
-// }
-
-// .menu {
-//   width: 40px;
-//   height: 40px;
-// }
-
-// .title {
-//   width: 300px;
-//   height: 10px;
-//   top: 60px;
-// }
-
-// .menuItem {
-//   position: absolute;
-//   left: 0px;
-//   top: 0px;
-//   width: $itemSize;
-//   height: $itemSize;
-//   background-color: white;
-//   -moz-border-radius: 50%;
-//   -webkit-border-radius: 50%;
-//   border-radius: 50%;
-//   cursor: pointer;
-//   text-align: center;
-//   line-height: $itemSize;
-// }
-
-// i {
-//   font-size: 0.6 * $itemSize;
-//   color: #222222;
-// }
+@media (min-width: 769px) {
+  .hamburgerMenu {
+    display: none;
+  }
+}
