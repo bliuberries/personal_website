@@ -8,12 +8,7 @@ import hStyles from '../header.module.scss';
 const Navbar = props => (
   <header className={hStyles.toolBar}>
     <nav className={hStyles.toolBarNav}>
-      <div className={hStyles.hamburgerMenu}>
-        <Hamburger click={props.openClose}/>
-      </div>
-      <div className={hStyles.toolBarLogo}>
-        <Icon />
-      </div>
+      <Icon />
       <div className={hStyles.spacer}/>
       <div className={hStyles.navItems}>
         <ul className={hStyles.toolbarNavUl}> 
