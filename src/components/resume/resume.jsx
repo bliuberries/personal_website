@@ -14,7 +14,7 @@ import skills from './resumePoints/skills.js'
 import education from './resumePoints/education.js'
 import workExperience from './resumePoints/workExperience.js'
 
-import ContactSnippet from '../header/contactSnippet.jsx';
+import ContactSnippet from '../contact/contactSnippet.jsx';
 
 //CSS 
 import resumeStyles from './resume.module.scss';

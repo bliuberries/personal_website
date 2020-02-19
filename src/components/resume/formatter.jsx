@@ -14,6 +14,7 @@ const Formatter = (props) => {
           {skills.map((item, index) => {
             return <li key={index}>{item}</li>
           })}
+          <br/>
         </ul>
       </div>
       <div className={rStyles.gridA}>
@@ -43,6 +44,7 @@ const Formatter = (props) => {
                       <li key={index}>{exp}</li>
                     )
                   })}
+                  <br/>
                   {key}
                   {item.key.map((bullets, index) => {
                     return (
