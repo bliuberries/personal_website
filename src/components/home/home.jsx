@@ -2,6 +2,8 @@ import React from 'react';
 import Navbar from '../header/hamburgerMenu/navbar.js';
 import CenterText from './centerText.jsx';
 import homeStyles from './home.module.scss';
+import hStyles from '../header/header.module.scss';
+import Hamburger from '../header/hamburgerMenu/sidePanel/hamburgerMenu.jsx';
 import SidePanel from '../header/hamburgerMenu/sidePanel/sidePanel.jsx';
 import Backdrop from '../header/hamburgerMenu/backdrop.js';
 
@@ -34,18 +36,18 @@ class Home extends React.Component {
   }
 
   backdropClickHandler = () => {
-    this.setState({sidePanelOpen: false})
+    this.setState({ sidePanelOpen: false })
   }
 
   render() {
     let backdrop;
-    if(this.state.sidePanelOpen) {
-      backdrop = <Backdrop click={this.backdropClickHandler}/>
+    if (this.state.sidePanelOpen) {
+      backdrop = <Backdrop click={this.backdropClickHandler} />
     }
     return (
       <div>
-        <Navbar openClose={this.openCloseSidePanel}/>
-        <SidePanel show={this.state.sidePanelOpen}/>
+        <Navbar />
+        <SidePanel show={this.state.sidePanelOpen} />
         {backdrop}
         <div className="background" >
           <div className={homeStyles.centerTextContainer}>
@@ -56,6 +58,9 @@ class Home extends React.Component {
             })}
             <br />
             {this.state.Button !== undefined ? <this.state.Button className={homeStyles.button} /> : null}
+          </div>
+          <div className={hStyles.hamburgerMenu}>
+            <Hamburger click={this.openCloseSidePanel} />
           </div>
         </div>
       </div>
