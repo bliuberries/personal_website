@@ -28,8 +28,6 @@
 }
 .contactModal {
   margin: auto;
-  // width: 60%;
-  // height: 100%;
   padding: 5%;
 }
 
@@ -156,6 +154,14 @@ button:focus {
 
 @media (max-width: 768px) {
   .contactSnippet {
-    height: 40vh;
+    height: 50vh;
+  }
+  .modal {
+    left: 10%;
+    height: 70%;
+    width: 70%;
+  }
+  .modalTitle {
+    font-size: 20px;
   }
 }
