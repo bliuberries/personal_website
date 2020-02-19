@@ -1,26 +1,26 @@
 import React from 'react';
-import resumeStyles from './resume.module.scss';
+import rStyles from './resume.module.scss';
 
 const Formatter = (props) => {
   const { skills, education, work } = props
 
   return (
-    <div>
-      <div className={resumeStyles.gridA}>
-        <ul className={resumeStyles.item1}>
+    <div className={rStyles.container}>
+      <div className={rStyles.gridA}>
+        <ul className={rStyles.item1}>
           Technologies
         </ul>
-        <ul className={resumeStyles.item2}>
+        <ul className={rStyles.item2}>
           {skills.map((item, index) => {
             return <li key={index}>{item}</li>
           })}
         </ul>
       </div>
-      <div className={resumeStyles.gridA}>
-        <ul className={resumeStyles.item1}>
+      <div className={rStyles.gridA}>
+        <ul className={rStyles.item1}>
           Work Experience
         </ul>
-        <ul className={resumeStyles.item2}>
+        <ul className={rStyles.item2}>
           {work.map((item, index) => {
             let key = item.key.length > 0 ? <strong> Key Achievements </strong> : null;
             return (
@@ -55,11 +55,11 @@ const Formatter = (props) => {
           })}
         </ul>
       </div>
-      <div className={resumeStyles.gridA}>
-        <ul className={resumeStyles.item1}>
+      <div className={rStyles.gridA}>
+        <ul className={rStyles.item1}>
           Education
         </ul>
-        <ul className={resumeStyles.item2}>
+        <ul className={rStyles.item2}>
           {education.map((edu, index) => {
             return (
               <li key={index}>
