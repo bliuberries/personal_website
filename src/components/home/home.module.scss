@@ -1,6 +1,7 @@
 .home {
   background-image: url('https://imgur.com/VfabQxi.png');
   background-size: cover;
+  background-position: center center;
 }
 
 .centerTextContainer {
@@ -47,7 +48,7 @@
 
 @media only screen and (max-width: 600px) {
   .centerText {
-    font-size: 38px;
+    font-size: 32px;
   }
 }
 
