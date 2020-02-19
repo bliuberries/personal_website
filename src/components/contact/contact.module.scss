@@ -124,6 +124,8 @@ button:focus {
   outline: 0;
 }
 
+//contact Snippet
+
 .contactSnippet {
   padding-top: 20px;
   text-align: center;
@@ -149,5 +151,11 @@ button:focus {
   &:hover {
     background-color: #e1a87a;
     color: white;
+  }
+}
+
+@media (max-width: 768px) {
+  .contactSnippet {
+    height: 40vh;
   }
 }
