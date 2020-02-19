@@ -6,7 +6,7 @@ const tetris = {
     {src: 'https://i.imgur.com/tAerlpv.gif'}
   ],
   title: 'Tetris',
-  url: 'hosted website url',
+  url: 'https://github.com/bliuberries/tetris',
   github: 'https://github.com/bliuberries/tetris',
   description: 'I made this',
   techStack: 'Javascript'
