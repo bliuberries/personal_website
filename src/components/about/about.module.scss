@@ -21,10 +21,6 @@
   align-items: center;
 }
 
-// .imageContainer {
-//   // padding-bottom: 20%;
-// }
-
 
 .textBlock {
   font-size: 16px;
@@ -52,4 +48,13 @@
   font-weight: 800;
   font-size: 1.5em;
   letter-spacing: 0.1em;
+}
+
+@media (max-width: 768px) {
+  .aboutGridContainer {
+    display: flex;
+  }
+  .imageContainer {
+    display: none;
+  }
 }

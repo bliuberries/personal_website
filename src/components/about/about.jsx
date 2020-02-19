@@ -1,5 +1,5 @@
 import React from 'react';
-import ContactSnippet from '../header/contactSnippet.jsx';
+import ContactSnippet from '../contact/contactSnippet.jsx';
 import images from '../images.js';
 import Home from '../home/home.jsx';
 
