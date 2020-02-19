@@ -47,7 +47,7 @@ const Icon = (props) => {
   }
 
   return (
-    <div style={container}>
+    <div style={container} className='theIcon'>
       <div style={outerBox}>
         <div style={firstInit}>{fInit}</div>
         <div style={slash} />
