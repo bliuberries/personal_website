@@ -17,10 +17,10 @@ const App = () => {
     <div className="App">
       <ScrollToTop >
         <Switch>
-          <Route exact path='/' render={() => 
-          <div className={homeStyle.home}>
-            <Home cText={['DEVELOPER']} />
-          </div>} />
+          <Route exact path='/' render={() =>
+            <div className={homeStyle.home}>
+              <Home cText={['DEVELOPER']} />
+            </div>} />
           <Route exact path='/about' component={About} />
           <Route exact path='/portfolio' component={Portfolio} />
           <Route exact path='/resume' component={Resume} />
