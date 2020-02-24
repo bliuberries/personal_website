@@ -1,7 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import pages from '../../pages.js';
 import hStyles from '../../header.module.scss';
 import classnames from 'classnames';
+import SingleNavItem from '../singleNavItem.jsx';
 
 const SidePanel = props => {
   let panelClass = hStyles.sidePanel;
@@ -11,11 +12,22 @@ const SidePanel = props => {
   return (
     <nav className={panelClass}>
       <ul className={hStyles.sidePanelul}>
-        <Link to='/' className={hStyles.navItem}>Home</Link>
-        <Link to='/about' className={hStyles.navItem}>About</Link>
-        <Link to='/portfolio' className={hStyles.navItem}>Portfolio</Link>
-        <Link to='/resume' className={hStyles.navItem}>Resume</Link>
-        <Link to='/contact' className={hStyles.navItem}>Contact</Link>
+      {pages.map((page, index) => {
+              return (
+                <SingleNavItem
+                  key={index}
+                  alias={page.alias}
+                  title={page.title}
+                  aStyle={
+                    {
+                      color:
+                        props.location === page.title
+                        ? '#e1a87a' : '#fff'
+                    }
+                  }
+                />
+              )
+            })}
       </ul>
     </nav>
   );
