@@ -101,38 +101,6 @@
   }
 }
 
-// .checkoutBox > .portfolioButton {
-//   height: 100%;
-//   width: 35%;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   margin-right: 5%;
-// }
-
-// .checkoutBox > .portfolioButton > a > .checkoutIcons {
-//   height: 100%;
-//   width: 15%;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   cursor: pointer;
-//   margin: 0% 2.5%;
-// }
-
-// .checkoutBox > .portfolioButton > .checkoutButton {
-//   background-color: #000;
-//   color: #fff;
-//   letter-spacing: 0.1em;
-//   height: 80%;
-//   width: 100%;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   cursor: pointer;
-//   text-decoration: none;
-// }
-
 @media only screen and (min-width: 300px) {
   .projectListContainer {
 
@@ -158,22 +126,20 @@
   }
 
   .imageGallery {
-    margin: 1.5em;
-    width: 20em;
-    height: 29%;
+    width: 80%;
+    height: 60%;
     background-color: #222;
   }
 
   .textBlockPortfolio {
     font-size: 12px;
     font-weight: 300;
-    margin: 30em 2em;
+    margin: 15% 5%;
   }
 
   .portfolioContainer {
-    display: grid;
-    grid-template-columns: 0% 100%;
-    column-gap: 2%;
+    display: flex;
+    flex-direction: column;
     border-top: 1px solid #ccc;
   }
 

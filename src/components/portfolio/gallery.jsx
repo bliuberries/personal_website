@@ -20,7 +20,7 @@ const customStyles = {
     ...base,
     color: '#afafaf',
     fontFamily: 'Raleway',
-    margin: '10% 50%',
+    margin: '0 50%',
     fontSize: '20px',
   }),
   navigationPrev: (base) => ({

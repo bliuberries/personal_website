@@ -6,10 +6,8 @@ import portStyles from './portfolio.module.scss';
 const Project = (props) => {
   return (
     <div className={portStyles.portfolioContainer}>
-      <div>
-        <div className={portStyles.imageGallery}>
-          <Gallery projectImages={props.name.images} />
-        </div>
+      <div className={portStyles.imageGallery}>
+        <Gallery projectImages={props.name.images} />
       </div>
       <div className={portStyles.textBlockPortfolio}>
         <div className={portStyles.positionTitle}>{props.name.title}</div>
