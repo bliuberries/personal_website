@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from '../header/hamburgerMenu/navbar.js';
+import Navbar from '../header/hamburgerMenu/navbar.jsx';
 import CenterText from './centerText.jsx';
 import homeStyles from './home.module.scss';
 import hStyles from '../header/header.module.scss';
@@ -20,11 +20,11 @@ class Home extends React.Component {
   }
 
   componentDidMount() {
-    this.setState((prevState) => {
+    this.setState(() => {
       return {
         cText: this.props.cText,
         Button: this.props.Button,
-        locat: this.props.location
+        location: this.props.location
       }
     })
   }
@@ -46,8 +46,8 @@ class Home extends React.Component {
     }
     return (
       <div>
-        <Navbar />
-        <SidePanel show={this.state.sidePanelOpen} />
+        <Navbar location={this.state.location} click={this.openCloseSidePanel}/>
+        <SidePanel show={this.state.sidePanelOpen} location={this.state.location}/>
         {backdrop}
         <div className="background" >
           <div className={homeStyles.centerTextContainer}>
@@ -58,9 +58,6 @@ class Home extends React.Component {
             })}
             <br />
             {this.state.Button !== undefined ? <this.state.Button className={homeStyles.button} /> : null}
-          </div>
-          <div className={hStyles.hamburgerMenu}>
-            <Hamburger click={this.openCloseSidePanel} />
           </div>
         </div>
       </div>
