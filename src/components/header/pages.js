@@ -1,18 +1,8 @@
 const pages = [
   {
-    title: 'Contact',
-    alias: 'contact',
-    css: 'contact'
-  },
-  {
-    title: 'Resume',
-    alias: 'resume',
-    css: 'resume'
-  },
-  {
-    title: 'Portfolio',
-    alias: 'portfolio',
-    css: 'portfolio'
+    title: 'Home',
+    alias: '',
+    css: 'home'
   },
   {
     title: 'About Me',
@@ -20,9 +10,19 @@ const pages = [
     css: 'about'
   },
   {
-    title: 'Home',
-    alias: '',
-    css: 'home'
+    title: 'Portfolio',
+    alias: 'portfolio',
+    css: 'portfolio'
+  },
+  {
+    title: 'Resume',
+    alias: 'resume',
+    css: 'resume'
+  },
+  {
+    title: 'Contact',
+    alias: 'contact',
+    css: 'contact'
   },
 ];
 
