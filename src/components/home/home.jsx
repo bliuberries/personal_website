@@ -2,8 +2,6 @@ import React from 'react';
 import Navbar from '../header/hamburgerMenu/navbar.jsx';
 import CenterText from './centerText.jsx';
 import homeStyles from './home.module.scss';
-import hStyles from '../header/header.module.scss';
-import Hamburger from '../header/hamburgerMenu/sidePanel/hamburgerMenu.jsx';
 import SidePanel from '../header/hamburgerMenu/sidePanel/sidePanel.jsx';
 import Backdrop from '../header/hamburgerMenu/backdrop.js';
 
