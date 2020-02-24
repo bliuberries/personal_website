@@ -19,7 +19,7 @@ const App = () => {
         <Switch>
           <Route exact path='/' render={() =>
             <div className={homeStyle.home}>
-              <Home cText={['DEVELOPER']} />
+              <Home cText={['DEVELOPER']} location='Home'/>
             </div>} />
           <Route exact path='/about' component={About} />
           <Route exact path='/portfolio' component={Portfolio} />
