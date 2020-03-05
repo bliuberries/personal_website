@@ -21,7 +21,7 @@ const workExperience = [
       {
         name: 'U.S. Air Force',
         place: 'Overseas',
-        date: 'Mar 2013 - Sep 2018'
+        date:  'Sep 2012 - Sep 2018'
       }
     ],
     experience: [

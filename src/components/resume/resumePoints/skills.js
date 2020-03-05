@@ -6,8 +6,8 @@ const skills = [
   'HTML5 / CSS3',
   'Sass / LESS',
   'MySQL / PostgreSQL',
-  'Version Control (GIT)'
-
+  'Version Control (GIT)',
+  'UI / UX'
 ]
 
 
