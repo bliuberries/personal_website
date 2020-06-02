@@ -12,6 +12,7 @@ const Dropdown = (props) => {
           <option>Super Mario Clone</option>
           <option>My Website</option>
           <option>Tetris</option>
+          <option>IT Heatmap</option>
         </select>
       </div>
     </div>

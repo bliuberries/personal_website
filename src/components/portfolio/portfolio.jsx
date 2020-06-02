@@ -9,6 +9,7 @@ import Project from './singleProject';
 import Tetris from './projects/tetris.js';
 import superMario from './projects/superMario.js';
 import myWebsite from './projects/myWebsite.js';
+import itHeatMap from './projects/itHeatmap.js';
 
 //CSS
 import portStyles from './portfolio.module.scss';
@@ -32,7 +33,8 @@ class Portfolio extends React.Component {
     const project = 
     this.state.projectName === 'Super Mario Clone' ? superMario : 
     this.state.projectName === 'My Website' ? myWebsite :
-    this.state.projectName === 'Tetris' ? Tetris : superMario;
+    this.state.projectName === 'Tetris' ? Tetris :
+    this.state.projectName === 'IT Heatmap' ? itHeatMap : superMario;
     return (
       <div className={portStyles.portfolio}>
         <Home cText={['My Projects']} location='Portfolio'/>
