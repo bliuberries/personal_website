@@ -1,10 +1,10 @@
 const itHeatMap = {
   images: [
-    {src: 'https://imgur.com/nzkhk4k'},
-    {src: 'https://imgur.com/TIIfgoO'},
-    {src: 'https://imgur.com/dWQd4hl'},
-    {src: 'https://imgur.com/4SGX6xT'},
-    {src: 'https://imgur.com/cWDH2Y4'}
+    {src: 'https://imgur.com/nzkhk4k.jpg'},
+    {src: 'https://imgur.com/TIIfgoO.jpg'},
+    {src: 'https://imgur.com/dWQd4hl.jpg'},
+    {src: 'https://imgur.com/4SGX6xT.jpg'},
+    {src: 'https://imgur.com/cWDH2Y4.jpg'}
   ],
   title: 'IT Ticket Heatmap System',
   url: 'https://github.com/bliuberries/heatMap',
